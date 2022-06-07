@@ -1,0 +1,97 @@
+/* styles below 
+-----------------------*/
+
+* {
+    /* outline: 1px solid rgb(255, 0, 0); show border of element for flexbox clarity comment out when done */
+}
+
+
+body {
+    /* background-color: rgb(152, 228, 252); */
+    font-family: monospace;
+}
+
+.title {
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.arenaContainer{
+    font-size: 20px;
+}
+
+#pPick,
+#cPick {
+    opacity: 40%;
+    transition: all 0.3s;
+}
+
+img {
+    width: 8em;
+}
+
+#pPick:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+#pScore,
+#cScore {
+    font-size: 100px;
+    opacity: 25%;
+}
+
+.pBtn {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* .active , 
+.active{
+    opacity: 100%;
+    border: 2px solid red;
+} */
+/* flexbox below 
+-----------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.arenaContainer {
+    display: flex;
+    gap: 100px;
+    
+}
+.player,
+.cpu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.playerSide,
+.cpuSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}

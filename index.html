@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="title">
+            rock paper scissors
+        </div>
+
+        <div class="howToPlay">
+            click on an icon to make selection:
+        </div>
+    </div>
+
+    <div class="arenaContainer">
+        <div class="player">
+            <div id="pScore"> 0 </div>
+            <div class="playerSide">
+                player
+                <div class="player icons">
+                    <button class="pBtn"><img id="pPick" class="options pRock" src="./images/player-rock.png" alt="rock" draggable="false"></button>
+                    <button class="pBtn"><img id="pPick" class="options pPaper" src="./images/player-paper.png" alt="paper" draggable="false"></button>
+                    <button class="pBtn"><img id="pPick" class="options pScissors" src="./images/player-scissors.png" alt="scissors" draggable="false"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cpu">
+            
+            <div class="cpuSide">
+                cpu 
+                <div class="cpu icons">
+                    <img id="cPick" class="compOptions cRock" src="./images/cpu-rock.png" alt="rock" width="200px" draggable="false">
+                    <img id="cPick" class="compOptions cPaper" src="./images/cpu-paper.png" alt="paper" width="200px" draggable="false" >
+                    <img id="cPick" class="compOptions cScissors" src="./images/cpu-scissors.png" alt="scissors" width="200px" draggable="false">
+                </div>
+            </div>
+            <div id="cScore"> 0 </div>
+        </div>  
+
+    </div>
+
+    <button class="restartBtn">restart game</button>
+</body>
+</html>
